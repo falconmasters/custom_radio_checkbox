@@ -1,0 +1,93 @@
+@import variables
+
+* 
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	margin: 0
+	padding: 0
+
+body 
+	font-size: 16px
+	background: $white
+	font-family: "Roboto"
+
+a 
+	color: $primario
+
+.wrap 
+	width: 90%
+	max-width: 1000px
+	margin: auto
+
+.info 
+	text-align: center
+	padding: 20px
+	color: $titular
+	border-bottom: 1px solid #ccc
+	p 
+		margin-top: 20px
+
+.formulario
+	h2 
+		font-size: 16px
+		color: $titular
+		margin-bottom: 20px
+		margin-left: 20px
+	> div 
+		padding: 20px 0
+		border-bottom: 1px solid #ccc
+	label 
+		display: inline-block
+		cursor: pointer
+		color: $primario
+		position: relative
+		padding: 5px 15px 5px 51px
+		font-size: 1em
+		border-radius: 5px
+		-webkit-transition: all .3s ease
+		-o-transition: all .3s ease
+		transition: all .3s ease
+		&:hover 
+			background: rgba($primario, .1)
+		&:before 
+			content: ""
+			display: inline-block
+
+			width: 17px
+			height: 17px
+			position: absolute
+
+			left: 15px
+
+			border-radius: 50%
+			background: none
+			border: 3px solid $primario
+
+	/* --------------------------------------- */
+	/* ----- Radio Button */
+	/* --------------------------------------- */
+	input[type="radio"]
+		display: none
+		&:checked + label:before 
+			display: none
+		&:checked + label 
+			padding: 5px 15px 
+			background: $primario
+			border-radius: 2px
+			color: #fff
+			
+	/* --------------------------------------- */
+	/* ----- Checkbox */
+	/* --------------------------------------- */
+	.checkbox
+		label:before 
+			border-radius: 3px
+		input[type="checkbox"]
+			display: none
+			&:checked + label:before 
+				display: none
+			&:checked + label
+				background: $primario
+				color: #fff
+				padding: 5px 15px
