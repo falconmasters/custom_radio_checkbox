@@ -1,6 +1,6 @@
 # Radio Buttons y Checkbox Personalizados con estilo Material Design
 
-[img]
+![Thumb](https://raw.githubusercontent.com/falconmasters/custom_radio_checkbox/master/img/thumb.jpg)
 
 Demo: http://codepen.io/falconmasters/pen/GppJOw
 
