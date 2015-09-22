@@ -42,7 +42,8 @@ a {
   .formulario > div {
     padding: 20px 0;
     border-bottom: 1px solid #ccc; }
-  .formulario label {
+  .formulario .radio label,
+  .formulario .checkbox label {
     display: inline-block;
     cursor: pointer;
     color: #FF4136;
@@ -53,9 +54,11 @@ a {
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease; }
-    .formulario label:hover {
+    .formulario .radio label:hover,
+    .formulario .checkbox label:hover {
       background: rgba(255, 65, 54, 0.1); }
-    .formulario label:before {
+    .formulario .radio label:before,
+    .formulario .checkbox label:before {
       content: "";
       display: inline-block;
       width: 17px;
